@@ -4,7 +4,7 @@
       <source media="(prefers-color-scheme: dark)" srcset="docs/content/assets/img/traefik.logo-dark.png">
       <source media="(prefers-color-scheme: light)" srcset="docs/content/assets/img/traefik.logo.png">
       <img alt="Traefik" title="Traefik" src="docs/content/assets/img/traefik.logo.png">
-    </picture>
+    </picture>  
 </p>
 
 [![Build Status SemaphoreCI](https://traefik-oss.semaphoreci.com/badges/traefik/branches/master.svg?style=shields)](https://traefik-oss.semaphoreci.com/projects/traefik)
