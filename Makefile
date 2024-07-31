@@ -146,7 +146,7 @@ validate: lint
 # Target for building images for multiple architectures.
 .PHONY: multi-arch-image-%
 multi-arch-image-%: binary-linux-amd64 binary-linux-arm64
-	docker buildx build $(DOCKER_BUILDX_ARGS) -t traefik/traefik:$* --platform=$(DOCKER_BUILD_PLATFORMS) -f Dockerfile .
+	docker buildx build $(DOCKER_BUILDX_ARGS) -t carlhenning/traefiktest:$* --platform=$(DOCKER_BUILD_PLATFORMS) -f Dockerfile .
 
 
 .PHONY: build-image
