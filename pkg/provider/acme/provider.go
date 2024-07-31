@@ -305,6 +305,7 @@ func (p *Provider) getClient() (*lego.Client, error) {
 					logger.Debug().Msgf("Delaying %d rather than validating DNS propagation now.", p.DNSChallenge.DelayBeforeCheck)
 					time.Sleep(time.Duration(p.DNSChallenge.DelayBeforeCheck))
 				}
+				logger.Debug().Msgf("DisablePropagationCheck %t.", p.DNSChallenge.DisablePropagationCheck)
 
 				if p.DNSChallenge.DisablePropagationCheck {
 					return true, nil
